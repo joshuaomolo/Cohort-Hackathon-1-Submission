@@ -1,0 +1,210 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0 8% 0 8%;
+    border: 1px solid #1F3863;
+    padding: 5px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+
+.profile .prof img{
+    border-radius:10px;
+}
+
+/* Heading title*/
+.hd {
+    background-color: #1F3863;
+    color: white;
+    font-size: 25px;
+    margin: 2px;
+    border-radius:2px;
+    margin:0 40% 0 0;
+}
+
+.prof {
+    margin: 10px;
+}
+
+/* sides*/
+.portfolio-sides {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    padding: 5px;
+    line-height:25px;
+}
+
+/* Anchor tags*/
+.links a {
+    text-decoration: none;
+    display: block;
+    font-size:20px;
+    color: #1F3863;
+    padding:5px;
+}
+
+.train-heading {
+    background-color: #1F3863;
+    padding: 1px;
+    color: white;
+}
+
+/* Trainings */
+.trainings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trainings p {
+    font-style: italic;
+}
+
+.edu li {
+    font-weight: bold;
+}
+
+.edu .edu-back {
+    background-color: #1F3863;
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+}
+
+/* Membership */
+.membership .member {
+    background-color: #1F3863;
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    margin: 0 30% 0 0;
+}
+
+.professional .pro {
+    background-color: #1F3863;
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    margin: 0 30% 0 0
+}
+
+.skills .sk {
+    background-color: #1F3863;
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    margin: 0 30% 0 0
+}
+
+/* Skills*/
+.prof-skills .prf {
+    background-color: #1F3863;
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    margin: 0 30% 0 0
+}
+
+/* Sides */
+.sides .wk {
+    background-color: #1F3863;
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    margin: 0 30% 0 0
+}
+
+.train-heading {
+    background-color: #1F3863;
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    margin: 0;
+}
+
+.train-body{
+    border:2x solid blue;
+}
+
+/* Mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+    body {
+        margin: 0 5%;
+        padding: 5px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .portfolio-sides {
+        flex-direction: column;
+    }
+
+    .trainings {
+        flex-direction: column;
+    }
+
+    .hd, .membership .member, .professional .pro, 
+    .skills .sk, .prof-skills .prf, .sides .wk {
+        margin: 0;
+        text-align: center;
+    }
+
+    .links a {
+        font-size: 18px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+/* Tablets (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        margin: 0 5%;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .portfolio-sides {
+        flex-direction: column;
+    }
+
+    .trainings {
+        flex-direction: column;
+    }
+
+    .hd {
+        font-size: 22px;
+    }
+}
+
+/* Larger screens (1025px and up) */
+@media (min-width: 1025px) {
+    .profile {
+        flex-direction: row;
+    }
+
+    .portfolio-sides {
+        flex-direction: row;
+    }
+
+    .trainings {
+        flex-direction: row;
+    }
+}
